@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap JS (including Popper.js and Bootstrap.bundle.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <div id="top"></div>
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-custom fixed-top navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#top">
+      <img src="wagtail-6211745_640.jpg" alt="Logo" style="width:40px;" class="rounded-pill"> NatureScape
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#top">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#equipment">Equipment</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#products" role="button" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#cameras-lenses">Cameras and Lenses</a></li>
+            <li><a class="dropdown-item" href="#care-transport">Care and Transport</a></li>
+            <li><a class="dropdown-item" href="#accessories">Accessories</a></li>
+            <li><a class="dropdown-item" href="#filters">Photography Filters</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>          
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Carousel -->
+<section id="top">
+<div id="demo" class="carousel slide mt-5" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+<!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="houses-carousel.jpg" alt="Homes By The Lake" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Homes By The Lake</h3>
+        <p>by AlKalenski</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="landscape-carousel.jpg" alt="Mountain View" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Mountain View</h3>
+        <p>by ChiemSeherim</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="polana-kalatowki-carousel.jpg" alt="view of pine trees and meadow" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Polana Kalatówki</h3>
+        <p>by agnieszkastanislawa91</p>
+      </div>  
+    </div>
+    <div class="carousel-item">
+      <img src="fields-carousel.jpg" alt="Serene fields" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Serene Fields</h3>
+        <p>by aszak</p>
+      </div>  
+    </div>
+  </div>
+  
+<!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<!-- Grid -->
+<section id="equipment">
+<div class="container" id="equipment" style="padding-top: 70px;">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="sunset-grid.jpg" alt="camera and a sunset on the background" class="img-fluid custom-img img-rounded-corners-1">
+      </div>
+      <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-center">Equipment</h2>
+        <p class="text-center">Take your photography to the next level with our top-quality cameras 
+          and lenses. Capture every detail with precision and vibrant colors 
+          using the latest in photography technology. Whether you're shooting 
+          in a studio or outdoors, our equipment is designed to deliver stunning 
+          results every time.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="gear-grid.jpg" alt="various camera equipment" class="img-fluid custom-img img-rounded-corners-2">
+      </div>
+    </div> 
+  </div>
+</section>
+  
+<!-- Cards -->
+<section id="products">
+<div class="container mt-5" id="products">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <!-- Card 1 -->
+      <div class="col" id="cameras-lenses">
+        <div class="card h-100">
+          <img src="cameraslenses-card.jpg" class="card-img-top" alt="professional camera">
+          <div class="card-body">
+            <h5 class="card-title">Cameras and Lenses</h5>
+            <p class="card-text">Discover unparalleled clarity with our state-of-the-art 
+              cameras and lenses, crafted for both professional and aspiring photographers. 
+              Capture every moment with stunning precision and vibrant detail, 
+              no matter where your adventures take you.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col" id="care-transport">
+        <div class="card h-100">
+          <img src="caretransport-card.jpg" class="card-img-top" alt="professional camera in a bag">
+          <div class="card-body">
+            <h5 class="card-title">Camera Care and Transport</h5>
+            <p class="card-text">
+              Ensure your gear stays in top condition with our premium camera care and 
+              transport solutions. Protect your equipment from the elements 
+              and handle it with confidence.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col" id="accessories">
+        <div class="card h-100">
+          <img src="accessories-card.jpg" class="card-img-top" alt="various accessories for photographers">
+          <div class="card-body">
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text">Elevate your shooting experience with our versatile 
+              camera accessories, designed to enhance every aspect of your photography.
+               From tripods to filters, each accessory is crafted to add convenience 
+               and creativity to your gear.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col" id="filters">
+        <div class="card h-100">
+          <img src="filters-card.jpg" class="card-img-top" alt="camera and a color filter">
+          <div class="card-body">
+            <h5 class="card-title">Photography Filters</h5>
+            <p class="card-text">Transform your images with our high-quality photography 
+              filters, which enhance colors and control lighting to achieve the perfect shot. 
+              Whether you're capturing landscapes or portraits, these filters offer 
+              precision and creativity to elevate your photography.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Accordion -->
+<div class="container mt-5">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Close-up and Product Photography
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-md-4 d-flex justify-content-center">
+                <img src="macro-accordion.jpg" alt="close-up of a camera lens" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <p>Capture every detail with precision using our top-of-the-line close-up 
+                    and product photography equipment. Our gear ensures that even the 
+                    smallest features are rendered in stunning clarity, perfect for showcasing 
+                    intricate designs and textures. Elevate your product shots and bring 
+                    your subjects to life with vibrant, high-resolution images.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Computer Hardware and Software
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-md-4 d-flex justify-content-center">
+                <img src="software-accordion.jpg" alt="a laptop, a notepad and lamp on a table" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <p>Enhance your photography workflow with our advanced computer hardware 
+                    and software solutions. Our powerful systems and cutting-edge 
+                    software are designed to streamline editing and optimize performance, 
+                    ensuring you can work efficiently and achieve professional-quality 
+                    results. From high-speed processing to intuitive editing tools, 
+                    we provide everything you need to bring your creative vision to life.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              The School of Photography: Beginners Guide
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-md-4 d-flex justify-content-center">
+                <img src="studio-accordion.jpg" alt="photography studio with a background drop" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <p>Unlock your creative potential with our School of Photography's Beginners Guide. 
+                    This comprehensive course offers step-by-step instructions and practical tips 
+                    to help you master the basics of photography with ease. From understanding 
+                    your camera settings to capturing stunning images, we'll guide you 
+                    every step of the way to turn your passion into expertise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<!-- Table -->
+<section id="contact">
+<div class="container mt-5 p-3" id="contact">
+    <h2>Contact us</h2>           
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>Customer Service</td>
+            <td>123 456 7890</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary Moe</td>
+            <td>Visual Consultant</td>
+            <td>234 567 8901</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July Dooley</td>
+            <td>Equipment Manager</td>
+            <td>345 678 9012</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</section>
+
+</body>
+</html>
